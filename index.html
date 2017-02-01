@@ -1,0 +1,47 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>iTunes Search</title>
+</head>
+
+<body>
+	<ul>
+		<li>tonvang</li>
+		<li>idovang</li>
+	</ul>
+	<center>
+		<h1 margin-top="150px"> uSearch</h1>
+		<p>for TUNES</p>
+		<input type="text" id="search"/>
+		<input type="submit" id="submit" value="iSearch"/>
+	</center>
+	<div class="row">
+		<div class="col-sm-4"><center>LEFT</center></div>
+		
+		<div class="col-sm-4">
+			<script type="text/javascript">
+				function contains(text_one, text_two){
+					if(text_one.indexOf(text_two) ! = 1)
+						return true;
+				}
+				$("#search").keyup(function(){
+					var search = $("#search").value().toLowerCase();
+					$("ul li").each(function(){
+						if(!contains($(this).text().toLowerCase(), search))
+							$(this).hide();
+						else
+							$(this).show();
+					})
+				})
+			</script>
+		</div>
+		
+		<div class="col-sm-4"><center>RIGHT</center></div>
+	</div>
+</body>
+</html>
