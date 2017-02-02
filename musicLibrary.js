@@ -10,8 +10,8 @@ var music = [
 		"artist":"",
 		"genre":"",
 		"year":""
-	}
-		{
+	},
+	{
 		"title":"",
 		"artist":"",
 		"genre":"",
@@ -22,8 +22,8 @@ var music = [
 		"artist":"",
 		"genre":"",
 		"year":""
-	}
-		{
+	},
+	{
 		"title":"",
 		"artist":"",
 		"genre":"",
@@ -34,8 +34,8 @@ var music = [
 		"artist":"",
 		"genre":"",
 		"year":""
-	}
-		{
+	},
+	{
 		"title":"",
 		"artist":"",
 		"genre":"",
@@ -46,8 +46,8 @@ var music = [
 		"artist":"",
 		"genre":"",
 		"year":""
-	}
-		{
+	},
+	{
 		"title":"",
 		"artist":"",
 		"genre":"",
