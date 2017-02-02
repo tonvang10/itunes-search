@@ -12,8 +12,8 @@
   <center>
     <h1>uSearch</h1>
     <h5>for TUNES</h5>
-    <input type="text" id="searchInput">
-    <input type="submit" id="searchSubmit" value="iSearch">
+    <input type="text" id="searchInput" onkeydown="if (event.keyCode == 13) { search(); return false; }">
+    <input type="submit" id="searchSubmit" value="iSearch" onclick="search()">
     </center>
     <div class="row">
      <div class="col-sm-3"><center><h2>GET MUSIC</h2></center></div>
@@ -31,7 +31,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="musicLibrary.js"></script>
-    <script src="jquery.js"></script>
     <script src="app.js"></script>
   </body>
   </html>
